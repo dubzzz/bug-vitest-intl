@@ -1,0 +1,15 @@
+{
+  "name": "bug-vitest-intl",
+  "version": "1.0.0",
+  "description": "Is there really a bug when stubbing Intl or did I just made it wrong? Checking on a minimal reproduction case",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vitest": "^2.1.8"
+  }
+}
