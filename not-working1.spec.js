@@ -1,4 +1,4 @@
-import {  test, vi } from "vitest";
+import { test, vi } from "vitest";
 
 const UntouchedIntl = Intl;
 test("My test (not working #1)", () => {
