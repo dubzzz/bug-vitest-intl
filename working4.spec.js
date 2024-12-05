@@ -3,7 +3,7 @@ import { test, vi } from "vitest";
 const UntouchedIntl = Intl;
 const UntouchedIntlDescriptors = Object.getOwnPropertyDescriptors(Intl);
 
-test("My test (not working #1)", () => {
+test("My test (working #4)", () => {
   const defaultLocale = "en-US";
   const NewIntl = {};
   Object.defineProperties(NewIntl, {
