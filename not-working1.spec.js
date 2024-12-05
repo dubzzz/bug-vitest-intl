@@ -1,7 +1,6 @@
-import { test, vi } from "vitest";
+import {  test, vi } from "vitest";
 
 const UntouchedIntl = Intl;
-
 test("My test (not working #1)", () => {
   const defaultLocale = "en-US";
   vi.stubGlobal("Intl", {
@@ -24,15 +23,5 @@ test("My test (not working #1)", () => {
       }
     },
   });
-  vi.useFakeTimers();
-});
-
-test("My test (not working #2)", () => {
-  vi.stubGlobal("Intl", { ...UntouchedIntl });
-  vi.useFakeTimers();
-});
-
-test("My test (working)", () => {
-  vi.stubGlobal("Intl", UntouchedIntl);
   vi.useFakeTimers();
 });
